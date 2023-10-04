@@ -1,0 +1,351 @@
+  /* Style pour masquer initialement les éléments */
+        .element {
+            display: none;
+        }
+        .fixed-element {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: white; /* Fond blanc pour cacher le contenu en dessous */
+            z-index: 1000; /* S'assurer que l'élément reste au-dessus de tout le reste */
+            width: 300px; /* Largeur du cadre des avis clients */
+            padding: 10px; /* Marge intérieure pour l'espacement */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ombre légère pour le cadre */
+        }
+
+  
+
+
+ /* Style pour le bouton de fermeture sous forme de croix dans un cadre carré coloré */
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 25px; /* Largeur du cadre carré */
+    height: 25px; /* Hauteur du cadre carré */
+    background-color: red; /* Couleur de fond du cadre carré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white; /* Couleur du texte (croix) */
+}
+
+.close-button:hover {
+    background-color: darkred; /* Couleur de fond au survol */
+}
+
+        
+        .stars {
+            color: yellow;
+            margin-top: 5px; /* Espacement entre le texte et les étoiles */
+        }
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+
+
+
+
+.etiquette {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background-color: #937;
+    top: 50px;
+    left: 340px;
+    text-align: center;
+    padding-top: 5px;
+    transform-origin: center center;
+    border: 5px solid pink; /* Bordure rose */
+    color: pink; /* Couleur du texte rose */
+}
+
+.rotate-5 {
+    transform: rotate(5deg); /* Rotation de 5 degrés */
+}
+
+.rotate-10 {
+    transform: rotate(180deg); /* Rotation de 10 degrés */
+}
+
+.rotate-80 {
+    transform: rotate(80deg); /* Rotation de 80 degrés */
+}
+        /* Arrière-plan bleu ciel */
+        body {
+            text-align: center;
+            /* Couleur de fond bleu ciel */background-color: #adadad; 
+        }
+        /* Style pour le titre encadré */
+        h1 {
+          border: 2px solid #333; 
+            /* Bordure autour du titre */
+            padding: 15px; /* Espacement interne du titre */
+            background-color: #f0f0f0; /* Couleur de fond */
+            display: inline-block; /* Pour que le titre soit dans un bloc */
+            font-size: 24px; /* Taille de police augmentée */
+        }
+  h2 {
+
+    text-align: center;
+  
+    padding: 10px; 
+    border: 1px solid black; 
+    /* Bordure de 2 pixels en noir */
+    /* Espace intérieur de 10 pixels */
+    background-color: white; /* Arrière-plan blanc */
+    transition: all 0.3s; 
+    /* Transition pour réduire l'encadrement en douceur */
+  }
+  h3 {
+    padding: 10px; 
+    border: 1px solid black; 
+    /* Bordure de 2 pixels en noir */
+    /* Espace intérieur de 10 pixels */
+    background-color: white; /* Arrière-plan blanc */
+    
+    /* Transition pour réduire l'encadrement en douceur */
+  }
+
+  h4 {
+
+    text-align: center;
+  }
+    h5 {
+    padding: 10px; 
+    border: 1px solid black; 
+    /* Bordure de 2 pixels en noir */
+    /* Espace intérieur de 10 pixels */
+    background-color: white; /* Arrière-plan blanc */
+    
+    /* Transition pour réduire l'encadrement en douceur */
+  }
+        /* Style pour la section des images */
+        #images-section {
+            margin: 20px auto;
+            max-width: 800px; /* Limite la largeur de la section */
+            padding: 20px; /* Ajoute de l'espace autour de la section */
+            text-align: center; /* Alignement central du texte */
+        }
+        /* Supprimer les encadrements pour les images */
+        img {
+            max-width: 300px; /* Les images ne dépasseront pas la largeur de leur conteneur */
+            vertical-align: middle; /* Alignement vertical au centre des images */
+        }
+        /* Style pour la division des colonnes */
+        .column {
+            display: inline-block;
+            width: 300px; /* Largeur des colonnes */
+            margin: 1%;
+        }
+        /* Style pour les liens de navigation en haut de la page */
+        #nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        #nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        /* Style pour la description en haut de la page (cachée par défaut) */
+        #header-description {
+            display: none;
+            max-width: 400px; /* Limite la largeur de la description */
+            margin: 20px auto; /* Centre la description horizontalement */
+            text-align: left; /* Alignement du texte à gauche */
+            padding: 10px; /* Ajoute de l'espace autour de la description */
+            background-color: #f0f0f0; /* Couleur de fond */
+        }
+        /* Style pour le bouton de parrainage */
+        #parrainage-button {
+            background-color: #fefb41;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        /* Animation pour le bouton de parrainage */
+        #parrainage-button:hover {
+            background-color: #555;
+        }
+        .rendez-vous {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .date {
+            font-weight: bold;
+        }
+        .heure {
+            color: #0077cc;
+        }
+        .description {
+            font-style: italic;
+        }
+        .categorie select {
+            width: 80%;
+        } 
+    @media screen and (max-width: 100px) {
+            .a2a_floating_style.a2a_vertical_style {
+                display: none;
+              
+            }
+        }   
+     .a2a_button_snapchat {
+            background-color: yellow;
+        }
+  /* Style pour l'encadrement initial */
+
+  
+/* Style pour l'encadrement de l'image */
+.image-frame {
+  border: 2px solid #ccc; /* Bordure de l'encadrement */
+  padding: 10px; /* Espace intérieur de l'encadrement */
+  width: 400px; /* Largeur de l'encadrement */
+  text-align: center; /* Centrer le contenu à l'intérieur de l'encadrement */
+}
+
+/* Style pour l'image à l'intérieur de l'encadrement */
+.image-frame img {
+  width: 100%; /* L'image remplit la largeur de l'encadrement */
+  height: auto; /* Laisser la hauteur s'ajuster automatiquement pour conserver le ratio d'aspect */
+}
+  /* Style pour l'encadrement réduit au survol */
+  p:hover {
+    border-width: 1px; /* Réduit la largeur de la bordure au survol */
+    padding: 5px; /* Réduit l'espace intérieur au survol */
+  }
+/* Sélecteur pour étoiles pleines */
+.star-rating .fa-solid.fa-star {
+  color: yellow;
+}
+
+/* Sélecteur pour étoiles à moitié remplies */
+.star-rating .fa-regular.fa-star-half-stroke {
+  color: yellow; /* Remplacez cette valeur par la couleur de votre choix en format hexadécimal, RVB, ou autre */
+}
+
+/* Classe générale pour la couleur jaune */
+.yellow {
+  color: yellow;
+}
+.heureActuelle {
+  border: 2px solid #4CAF50;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form-container label input,
+.form-container label select {
+  margin-top: 5px;
+}
+
+.form-container button {
+  margin-top: 10px;
+}
+    /* Style pour le conteneur du carrousel */
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    /* Style pour la liste des produits du carrousel */
+    .carousel {
+      display: flex;
+      animation: scrollRightToLeft 10s linear infinite;
+    }
+
+    /* Style pour chaque vignette de produit */
+    .carousel img {
+      width: 200px; /* Ajustez la largeur des images selon vos besoins */
+      height: auto;
+      margin-right: 10px; /* Espace entre les images */
+      border: 1px solid transparent; /* Bordure autour des images (transparente) */
+    }
+
+    /* Animation de défilement de droite à gauche */
+    @keyframes scrollRightToLeft {
+      0% {
+        transform: translateX(100%); /* Départ à droite */
+      }
+      100% {
+        transform: translateX(-100%); /* Réapparaît à droite */
+      }
+    }
+  
+  /* Style pour masquer initialement les éléments */
+        .element {
+            display: none;
+        }
+
+
+
+  /* Style pour le footer */
+footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte dans le footer */
+    padding: 20px; /* Espacement intérieur du footer */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour le lien e-mail dans le footer */
+footer a {
+    color: white; /* Couleur du lien */
+    text-decoration: none; /* Supprimer la soulignement du lien */
+}
+
+
+
+  a {
+    color: #ff0000; /* Remplacez #ff0000 par la couleur de votre choix (par exemple, rouge) */
+    text-decoration: none; /* Supprimer la soulignement du lien */
+}
